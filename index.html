@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>페스카로</title>
 <script src="https://kit.fontawesome.com/5dd2d0aa64.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
 </head>
 <body>
 <!-- 본문바로가기 -->
@@ -17,7 +18,7 @@
   <div id="header">
     <div class="header_bg"></div>
     <!-- header_wrap, 넓이:100% -->
-    <div class="header_wrap black">
+    <div class="header_wrap ">
       <div class="header_inner">
         <!-- 실질적인 내용이 들어감 -->
         <div class="header_left">
@@ -106,71 +107,141 @@
   </div>
   <!-- //header -->
   <hr />
-  <!-- main_visual -->
-  <div class="main_visual">
-    <video muted autoplay loop poster="">
-      <source src="video/video_main.mp4" type="video/mp4">
-    </video>
-    <div class="bg_png"></div>
-    <div class="main_txt">
-      <p>Automotive<br />SW Solution Partner</p>
-      <p>미래차 소프트웨어 솔루션 파트너</p>
-      <a href="#">
-         <p>DETAIL VIEW</p>
-          <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-  <!-- //main_visual -->
-  <hr />
+
+
   <!-- container -->
   <div id="container">
-    <div class="content1">
+    <section class="main_visual">
+      <div class="bg_png"></div>
+        <video muted autoplay loop poster="">
+          <source src="video/video_main.mp4" type="video/mp4">
+        </video>
+      
+      <div class="main_txt">
+        <h2>
+          <span class="word" data-word="Automotive">
+            <span class="char">A</span>
+            <span class="char">u</span>
+            <span class="char">t</span>
+            <span class="char">o</span>
+            <span class="char">m</span>
+            <span class="char">o</span>
+            <span class="char">t</span>
+            <span class="char">i</span>
+            <span class="char">v</span>
+            <span class="char">e</span>
+          </span>
+          <br>
+          <span class="word" data-word="SW Solution Partner">
+            <span class="char">S</span>
+            <span class="char">W</span>
+            <span class="white_space"></span>
+            <span class="char">S</span>
+            <span class="char">o</span>
+            <span class="char">l</span>
+            <span class="char">u</span>
+            <span class="char">t</span>
+            <span class="char">i</span>
+            <span class="char">o</span>
+            <span class="char">n</span>
+            <span class="white_space"></span>
+            <span class="char">P</span>
+            <span class="char">a</span>
+            <span class="char">r</span>
+            <span class="char">t</span>
+            <span class="char">n</span>
+            <span class="char">e</span>
+            <span class="char">r</span>
+          </span>
+        </h2>
+        <p>
+          <span class="word">미래차 소프트웨어 솔루션 파트너</span>
+        </p>
+        <a href="#">
+           <p>DETAIL VIEW</p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+    <section class="content1">
       <!-- margin 0 auto -->
       <div class="con1_left_box">
-        <h2>Business</h2>
-        <p>페스카로는 자동차 사이버보안 전문기업에서<br />
-        자동차 전장 SW 전문기업으로 확장하여<br />
-        미래차에 필요한 모든 솔루션을 선도합니다.
+        <h2>
+          <span class="word" data-word="Business">
+            <span class="char">B</span>
+            <span class="char">u</span>
+            <span class="char">s</span>
+            <span class="char">i</span>
+            <span class="char">n</span>
+            <span class="char">e</span>
+            <span class="char">s</span>
+            <span class="char">s</span>
+          </span>
+        </h2>
+        <p><span class="word">페스카로는 자동차 사이버보안 전문기업에서<br /><span>
+          <span class="word">자동차 전장 SW 전문기업으로 확장하여<br /><span>
+          <span class="word">미래차에 필요한 모든 솔루션을 선도합니다.</span>>
         </p>
         <div class="count_box">
-          <button><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="prev_btn"><i class="fa-solid fa-arrow-left"></i></button>
           <span class="cur_num">01</span>
-          <span class="loading"></span>
+          <span class="loading animate"></span>
+          
           <span class="last_num">04</span>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="next_btn"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
       <div class="secure_list con1_right_box">
         <ul>
         <li><a href="#">
+          <div class="con1_img_box"></div>
           <strong>자동차 사이버보안<br />
           <span>Automotive Cybersecurity</span></strong>
+          
         </a></li>
         <li><a href="#">
           <strong>자동차 제어기<br />
           <span>Elecronic Control Unit</span></strong>
+          <div class="con1_img_box"></div>
         </a></li>
         <li><a href="#">
           <strong>V2X 사이버보안<br />
           <span>Vegicle to Everything</span></strong>
+          <div class="con1_img_box"></div>
         </a></li>
         <li><a href="#">
           <strong>SDV<br />
           <span>Software Defined Vehicle</span></strong>
+          <div class="con1_img_box"></div>
         </a></li>
         </ul> 
       </div>
-    </div>
-    <div class="content2">
+    </section>
+    <section class="content2 black">
       <video muted autoplay loop poster="">
         <source src="video/video_content.mp4" type="video/mp4">
       </video>
       <div class="con2_inner_box">
         <div class="con2_box_top">
-          <h2>About FESCARO</h2>
-          <p>내연기관차부터 전기차,자율주행차까지 전문 경험과 노하우를<br />
-          바탕으로 미래차 산업의 혁신을 주도합니다.</p>
+          <h2>
+            <span class="word" data-word="About FESCARO">
+              <span class="char">A</span>
+              <span class="char">b</span>
+              <span class="char">o</span>
+              <span class="char">u</span>
+              <span class="char">t</span>
+              <span class="white_space"></span>
+              <span class="char">F</span>
+              <span class="char">E</span>
+              <span class="char">S</span>
+              <span class="char">C</span>
+              <span class="char">A</span>
+              <span class="char">R</span>
+              <span class="char">O</span>
+            </span>
+          </h2>
+          <p><span class="word">내연기관차부터 전기차,자율주행차까지 전문 경험과 노하우를</span><br />
+            <span class="word">바탕으로 미래차 산업의 혁신을 주도합니다.</span></p>
         </div>
         <div class="con2_box_bottom">
           <ul>
@@ -179,8 +250,7 @@
             <dt>연평균 성장률(CAGR)</dt>
             <dd>
               <div class="con2_num_box">
-                <ul class="content2_num_left">
-                <li>8</li>
+                <ul class="content2_num_left">                
                 <li>0</li>
                 <li>1</li>
                 <li>2</li>
@@ -190,6 +260,7 @@
                 <li>6</li>
                 <li>7</li>                
                 <li>9</li>
+                <li>8</li>
                 </ul>
                 <ul class="content2_num_right">
                 <li>2</li>
@@ -214,7 +285,6 @@
             <dd>
               <div class="con2_num_box">
                 <ul class="content2_num_left">
-                <li>7</li>
                 <li>0</li>
                 <li>1</li>
                 <li>2</li>
@@ -224,6 +294,7 @@
                 <li>6</li>                
                 <li>8</li>
                 <li>9</li>
+                <li>7</li>
                 </ul>
                 <ul class="content2_num_right">
                 <li>1</li>
@@ -248,7 +319,6 @@
             <dd>
               <div class="con2_num_box">
                 <ul class="content2_num_left">
-                <li>4</li>
                 <li>0</li>
                 <li>1</li>
                 <li>2</li>
@@ -258,6 +328,7 @@
                 <li>7</li>
                 <li>8</li>
                 <li>9</li>
+                <li>4</li>
                 </ul>
                 <ul class="content2_num_right">
                 <li>2</li>
@@ -280,9 +351,8 @@
             <dl>
             <dt>연구인력비율</dt>
             <dd>
-              <div class="con2_num_last_box">
+              <div class="con2_num_box">
                 <ul class="content2_num_left">
-                  <li>8</li>
                 <li>0</li>
                 <li>1</li>
                 <li>2</li>
@@ -292,9 +362,10 @@
                 <li>6</li>
                 <li>7</li>
                 <li>9</li>
+                <li>8</li>
                 </ul>
                 <ul class="content2_num_right">
-                <li class="on">0</li>
+                <li>0</li>
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
@@ -313,71 +384,107 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="content3">
+    </section>
+    <section class="content3 black">
       <video muted autoplay loop poster="">
         <source src="video/video_content.mp4" type="video/mp4">
       </video>
       <div class="con3_inner_box">
         <div class="con3_txt_box">
-          <h2>Partnership</h2>
-          <p>페스카로는 기술력과 안정성, 신뢰성을 바탕으로<br />글로벌 OEM, Tier, Chip사와 함께하고 있습니다.</p>
+          <h2>
+            <span class="word" data-word="Partnership">
+              <span class="char">P</span>
+              <span class="char">a</span>
+              <span class="char">r</span>
+              <span class="char">t</span>
+              <span class="char">n</span>
+              <span class="char">s</span>
+              <span class="char">h</span>
+              <span class="char">i</span>
+              <span class="char">p</span>
+            </span>
+          </h2>
+          <p>
+            <span class="word">페스카로는 기술력과 안정성, 신뢰성을 바탕으로</span>
+            <br />
+            <span class="word">글로벌 OEM, Tier, Chip사와 함께하고 있습니다.</span>
+          </p>
         </div>
         <div class="par_list_box">
-          <div class="par_list_right">
-            <ul>
-            <li><img src="images/logo_01.jpg" alt="쌍용자동차" /></li>
-            <li><img src="images/logo_02.jpg" alt="HYUNDAI"></li>
-            <li><img src="images/logo_03.jpg" alt="KN"></li>
-            <li><img src="images/logo_04.jpg" alt="STELLANTIS"></li>
-            <li><img src="images/logo_05.jpg" alt=""></li>
-            <li><img src="images/logo_06.jpg" alt="BYD"></li>
-            <li><img src="images/logo_07.jpg" alt="TS한국교통안전공단"></li>
-            <li><img src="images/logo_08.jpg" alt="KISA"></li>
-            <li><img src="images/logo_09.jpg" alt="INFINEON"></li>
-            <li><img src="images/logo_010.jpg" alt="NXP"></li>
-            <li><img src="images/logo_011.jpg" alt="RENESAS"></li>
-            <li><img src="images/logo_012.jpg" alt="TEXASINSTRUMENT"></li>
-            <li><img src="images/logo_013.jpg" alt="LIFE.AUGMENTED"></li>
-            <li><img src="images/logo_014.jpg" alt="CYPRESS"></li>
-            <li><img src="images/logo_015.jpg" alt="TELECHIPS"></li>
-            <li><img src="images/logo_016.jpg" alt="ELEKTROBIT"></li>
-            <li><img src="images/logo_017.jpg" alt="APPLUS IDIADA"></li>
-            <li><img src="images/logo_018.jpg" alt="UL Solution"></li>
-            <li><img src="images/logo_019.jpg" alt="DNV"></li>
-            </ul>
+          <div  class="par_list_left">
+            <div class="roller_left">
+              <ul>
+              <li><img src="images/logo_01.jpg" alt="쌍용자동차" /></li>
+              <li><img src="images/logo_02.jpg" alt="HYUNDAI"></li>
+              <li><img src="images/logo_03.jpg" alt="KN"></li>
+              <li><img src="images/logo_04.jpg" alt="STELLANTIS"></li>
+              <li><img src="images/logo_05.jpg" alt=""></li>
+              <li><img src="images/logo_06.jpg" alt="BYD"></li>
+              <li><img src="images/logo_07.jpg" alt="TS한국교통안전공단"></li>
+              <li><img src="images/logo_08.jpg" alt="KISA"></li>
+              <li><img src="images/logo_09.jpg" alt="INFINEON"></li>
+              <li><img src="images/logo_010.jpg" alt="NXP"></li>
+              <li><img src="images/logo_011.jpg" alt="RENESAS"></li>
+              <li><img src="images/logo_012.jpg" alt="TEXASINSTRUMENT"></li>
+              <li><img src="images/logo_013.jpg" alt="LIFE.AUGMENTED"></li>
+              <li><img src="images/logo_014.jpg" alt="CYPRESS"></li>
+              <li><img src="images/logo_015.jpg" alt="TELECHIPS"></li>
+              <li><img src="images/logo_016.jpg" alt="ELEKTROBIT"></li>
+              <li><img src="images/logo_017.jpg" alt="APPLUS IDIADA"></li>
+              <li><img src="images/logo_018.jpg" alt="UL Solution"></li>
+              <li><img src="images/logo_019.jpg" alt="DNV"></li>
+              </ul>
+            </div>
           </div>
-          <div class="par_list_left">
-            <ul>
-            <li><img src="images/logo_01-1.jpg" alt="HYUNDAI MOBIS" /></li>
-            <li><img src="images/logo_02-1.jpg" alt="HYUNDAI AUTOEVER"></li>
-            <li><img src="images/logo_03-1.jpg" alt="HUMAX"></li>
-            <li><img src="images/logo_04-1.jpg" alt="MANDO"></li>
-            <li><img src="images/logo_05-1.jpg" alt="LS Automotive"></li>
-            <li><img src="images/logo_06-1.jpg" alt="SL CORPORATION"></li>
-            <li><img src="images/logo_07-1.jpg" alt="BorgiWarner"></li>
-            <li><img src="images/logo_08-1.jpg" alt="kyungshin"></li>
-            <li><img src="images/logo_09-1.jpg" alt="DAIHAN CALSONIC"></li>
-            <li><img src="images/logo_010-1.jpg" alt="ESTRA Adapted Thermal Solutions"></li>
-            <li><img src="images/logo_011-1.jpg" alt="HL Klemove"></li>
-            <li><img src="images/logo_012-1.jpg" alt="Continental"></li>
-            <li><img src="images/logo_013-1.jpg" alt="LG Elecronics"></li>
-            <li><img src="images/logo_014-1.jpg" alt="CHEMTRONICS"></li>
-            <li><img src="images/logo_015-1.jpg" alt="DIGEN"></li>
-            <li><img src="images/logo_016-1.jpg" alt="ERAE"></li>
-            <li><img src="images/logo_017-1.jpg" alt="PHX PHA"></li>
-            <li><img src="images/logo_018-1.jpg" alt="NIDEC All for dreams"></li>
-            <li><img src="images/logo_019-1.jpg" alt="SK Telecom"></li>
-            </ul>
+          <div class="par_list_right">
+            <div class="roller_right">
+              <ul>
+              <li><img src="images/logo_01-1.jpg" alt="HYUNDAI MOBIS" /></li>
+              <li><img src="images/logo_02-1.jpg" alt="HYUNDAI AUTOEVER"></li>
+              <li><img src="images/logo_03-1.jpg" alt="HUMAX"></li>
+              <li><img src="images/logo_04-1.jpg" alt="MANDO"></li>
+              <li><img src="images/logo_05-1.jpg" alt="LS Automotive"></li>
+              <li><img src="images/logo_06-1.jpg" alt="SL CORPORATION"></li>
+              <li><img src="images/logo_07-1.jpg" alt="BorgiWarner"></li>
+              <li><img src="images/logo_08-1.jpg" alt="kyungshin"></li>
+              <li><img src="images/logo_09-1.jpg" alt="DAIHAN CALSONIC"></li>
+              <li><img src="images/logo_010-1.jpg" alt="ESTRA Adapted Thermal Solutions"></li>
+              <li><img src="images/logo_011-1.jpg" alt="HL Klemove"></li>
+              <li><img src="images/logo_012-1.jpg" alt="Continental"></li>
+              <li><img src="images/logo_013-1.jpg" alt="LG Elecronics"></li>
+              <li><img src="images/logo_014-1.jpg" alt="CHEMTRONICS"></li>
+              <li><img src="images/logo_015-1.jpg" alt="DIGEN"></li>
+              <li><img src="images/logo_016-1.jpg" alt="ERAE"></li>
+              <li><img src="images/logo_017-1.jpg" alt="PHX PHA"></li>
+              <li><img src="images/logo_018-1.jpg" alt="NIDEC All for dreams"></li>
+              <li><img src="images/logo_019-1.jpg" alt="SK Telecom"></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="content4">
+    </section>
+    <section class="content4">
       <div class="con4_inner_box"> 
         <div class="con4_txt_box">
-          <h2>Contact us</h2>
-          <p>문의사항을 남겨주시면 <br />빠른 시일 내에 연락을 드리겠습니다.</p>
+          <h2>
+            <span class="word" data-word="Contact us">
+              <span class="char">C</span>
+              <span class="char">o</span>
+              <span class="char">n</span>
+              <span class="char">t</span>
+              <span class="char">a</span>
+              <span class="char">c</span>
+              <span class="char">t</span>
+              <span class="white_space"></span>
+              <span class="char">u</span>
+              <span class="char">s</span>
+            </span>
+          </h2>
+          <p>
+            <span class="word">문의사항을 남겨주시면 <br /></span>
+            <span class="word">빠른 시일 내에 연락을 드리겠습니다.</span>         
+          </p>
         </div>
         <div class="con4_form_box">
           <form action="/" method="post">
@@ -432,7 +539,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </section>
     <!--  -->
   </div>
   <!-- //cantainer -->
@@ -525,21 +632,21 @@
     </div>
      <!-- //footer_inner -->
      <!-- scroll_nav -->
-     <aside class="black">
+     <aside class="scroll_nav">
       <i class="fa-solid fa-house"></i>
       <span class="cur_p">01</span>
-      <ul id="scroll_nav_bar" class="scroll_nav_bar">
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
+      <ul class="scroll_nav_bar">
+      <li class="on"><a href="#" class="1"></a></li>
+      <li><a href="#" class="2"></a></li>
+      <li><a href="#" class="3"></a></li>
+      <li><a href="#" class="4"></a></li>
+      <li><a href="#" class="5"></a></li>
       </ul>
       <span class="total_p">05</span>
     </aside>
     <!-- //scroll_nav -->
     <!-- scroll_down -->
-    <div class="scroll_down black">
+    <div class="scroll_down">
       <span class="circle"></span>
       <span class="scroll_txt">SCROLL DOWN</span>
     </div>
@@ -551,7 +658,7 @@
       </a>
     <!-- //contact -->
     <!-- top -->
-    <button class="btn_top ab">
+    <button class="btn_top">
       <p class="blind">top</p>
       <i class="fa-solid fa-arrow-up"></i>
     </button>

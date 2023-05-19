@@ -12,7 +12,7 @@
 <!-- 본문바로가기 -->
 <div id="skipNavi" class="blind"><a href="#container">본문으로 바로가기</a></div>
 <!-- //본문바로가기 -->
-<div id="wrap">
+
   <div id="wrap">
     <!-- header -->
     <div id="header">
@@ -114,65 +114,80 @@
       <!-- spot_inner -->
       <div class="spot_inner">
         <div class="spot_tit_box">
-          <h2>CONTACT</h2>
+          <h2>
+            <span class="word" data-word="CONTACT">
+              <span class="char">C</span>
+              <span class="char">O</span>
+              <span class="char">N</span>
+              <span class="char">T</span>
+              <span class="char">A</span>
+              <span class="char">C</span>
+              <span class="char">T</span>
+            </span>
+          </h2>
           <p>미래차 소프트웨어 솔루션 파트너</p>
         </div>
         <!-- scroll_down -->
-        <div class="scroll_down black">
+        <div class="scroll_down">
           <span class="circle"></span>
           <span class="scroll_txt">SCROLL DOWN</span>
         </div>
         <!-- //scroll_down -->
       </div>
-            <!-- tab_menu -->
-            <div class="tab_menu">
-              <ul>
-              <li><a href="#">문의하기</a></li>
-              <li><a href="#">오시는길</a></li>
-              </ul>
-            </div>
-            <!--//tab_menu  -->
       <!-- //spot_inner -->
+
     </div>
     <!-- //spot -->
     <div id="content">
+          <!-- tab_menu -->
+          <div class="tab_menu">
+            <ul>
+            <li class="on"><a href="#">문의하기</a></li>
+            <li><a href="#">오시는길</a></li>
+            </ul>
+          </div>
+          <!--//tab_menu  -->
 
       <div class="faq">
         <h3>문의하기</h3>
-        <p>페스카로에 문의사항을 보내주시면<span>빠른 시일 내에 답변</span>드릴 수 있도록 하겠습니다.</p>          
-          <div>
+        <p>페스카로에 문의사항을 보내주시면,<br /><strong>빠른 시일 내에 답변</strong> 드릴 수 있도록 하겠습니다.</p>          
+          <div >
             <form action="/" method="post">
             <fieldset>
             <legend class="blind">문의하기</legend>
               <ul>
-                <ul class="contact_form_left">
-                <li><label for="faq_company_name">회사명<span>*</span></label>
-                <input type="text" name="company_name" id="faq_company_name" placeholder="회사명을 입력해주세요.(필수)" required>
+                <li>
+                  <ul class="contact_form_left">
+                  <li><label for="faq_company_name">회사명<span>*</span></label>
+                  <input type="text" name="company_name" id="faq_company_name" placeholder="회사명을 입력해주세요.(필수)" required>
+                  </li>
+                  <li><label for="faq_name">성명<span>*</span></label>
+                  <input type="text" name="name" id="faq_name" placeholder="성명을 입력해주세요.(필수)" required>              
+                  </li>
+                  <li><label for="faq_phone">연락처<span>*</span></label>
+                  <input type="tel" name="phone" id="faq_phone" title="전화번호입력" placeholder="연락처를 입력해주세요.(필수)" required> 
+                  </li>
+                  </ul>
+
+                  <ul class="contact_form_right">
+                  <li><label for="depart">부서<span>*</span></label>
+                  <input type="text" name="depart" id="faq_depart" placeholder="부서를 입력해주세요.(필수)" required>                
+                  </li>
+                  <li><label for="title">직함 <span>*</span></label>
+                  <input type="text" name="title" id="faq_title"  placeholder="직함을 입력해주세요.(필수)" required>
+                  </li>
+                  <li><label for="faq_email">이메일 <span>*</span></label>
+                  <input type="email" name="email" id="faq_email"  placeholder="이메일 주소를 입력해주세요.(필수)" required>
+                  </li>
+                  </ul>
                 </li>
-                <li><label for="faq_name">성명<span>*</span></label>
-                <input type="text" name="name" id="faq_name" placeholder="성명을 입력해주세요.(필수)" required>              
-                </li>
-                <li><label for="faq_phone">연락처<span>*</span></label>
-                <input type="tel" name="phone" id="faq_phone" title="전화번호입력" placeholder="연락처를 입력해주세요.(필수)" required> 
-                </li>
-                </ul>
-                <ul class="contact_form_right">
-                <li><label for="depart">부서<span>*</span></label>
-                <input type="text" name="depart" id="faq_depart" placeholder="부서를 입력해주세요.(필수)" required>                
-                </li>
-                <li><label for="title">직함<span>*</span></label>
-                <input type="text" name="title" id="faq_title"  placeholder="직함을 입력해주세요.(필수)" required>
-                </li>
-                <li><label for="faq_email">이메일<span>*</span></label>
-                <input type="email" name="email" id="faq_email"  placeholder="이메일 주소를 입력해주세요.(필수)" required>
-                </li>
-                </ul>
-                <li><label for="faq_text">문의사항<span>*</span></label>
-                <textarea name="text" id="faq_text" cols="30" rows="10" title="내용"  placeholder="내용을 기재해주세요.(필수)" required></textarea>
+                <li><label for="faq_text">문의사항 <span>*</span></label>
+                  <textarea name="text" id="faq_text" cols="30" rows="10" title="내용"  placeholder="내용을 기재해주세요.(필수)" required></textarea>
                 </li>
               </ul>
-              <h4>개인정보보호정책</h4>
+
               <div class="priv_pol_box">
+                <h4>개인정보보호정책</h4>
                 <div class="priv_pol_area">
                   <p>주식회사 페스카로는 고객 문의사항 접수 및 답변을 위해 아래와 같이 개인정보를 수집, 이용합니다.</p>
                   <ul>
@@ -180,11 +195,12 @@
                   <li>항목: 이름, 직급, 부서, 회사명, 연락처(휴대전화 번호 또는 유선 전화번호, 이메일 주소)</li>
                   <li>보유 기간: 수집일로부터 1년</li>
                   </ul>
-                  <p>서비스 이용에 필요한 최소한의 수집 및 이용에 동의하지 않을 수 있으나, 동의를 거부할 경우 서비스 이용에 제한이 있을 수 있습니다.</p>                
+                  <p>서비스 이용에 필요한 최소한의 수집 및 이용에 동의하지 않을 수 있으나, 동의를 거부할 경우 서비스 이용에 제한이 있을 수 있습니다.</p>
+                  <br />                
                 </div>
               </div>
-              <p>
-                <input type="checkbox" name="cookie" id="privacy_agree">
+              <p class="priv_agree">
+                <input type="checkbox" name="cookie" id="privacy_agree" />
                 <label for="privacy_agree">개인정보보호정책에 동의합니다.<span>(필수)*</span></label>
               </p>
               <input type="submit" value="문의하기" title="문의하기 바로가기" />
@@ -286,7 +302,7 @@
      <!-- //footer_inner -->
 </div>
 <!-- //wrap -->
-
+</div>
   
 </body>
 </html>
